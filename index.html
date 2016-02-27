@@ -9,6 +9,7 @@
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/parallax.js"></script>
 
+        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
         <link rel="stylesheet" href="highlight/styles/github.css">
         <script src="highlight/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
@@ -20,9 +21,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
-        <link href="data:text/css;charset=utf-8,%0Aimg%2Eleaflet%2Dtile%20%7B%0Apadding%3A%200%3B%0Amargin%3A%200%3B%0Aborder%2Dradius%3A%200%3B%0Aborder%3A%20none%3B%0A%7D%0A%2Einfo%20%7B%0Apadding%3A%206px%208px%3B%0Afont%3A%2014px%2F16px%20Arial%2C%20Helvetica%2C%20sans%2Dserif%3B%0Abackground%3A%20white%3B%0Abackground%3A%20rgba%28255%2C255%2C255%2C0%2E8%29%3B%0Abox%2Dshadow%3A%200%200%2015px%20rgba%280%2C0%2C0%2C0%2E2%29%3B%0Aborder%2Dradius%3A%205px%3B%0A%7D%0A%2Elegend%20%7B%0Aline%2Dheight%3A%2018px%3B%0Acolor%3A%20%23555%3B%0A%7D%0A%2Elegend%20svg%20text%20%7B%0Afill%3A%20%23555%3B%0A%7D%0A%2Elegend%20svg%20line%20%7B%0Astroke%3A%20%23555%3B%0A%7D%0A%2Elegend%20i%20%7B%0Awidth%3A%2018px%3B%0Aheight%3A%2018px%3B%0Afloat%3A%20left%3B%0Amargin%2Dright%3A%208px%3B%0Aopacity%3A%200%2E7%3B%0A%7D%0A" rel="stylesheet" />
-        <style type="text/css">code{white-space: pre;}</style>
-        <link href="data:text/css;charset=utf-8,pre%20%2Eoperator%2C%0Apre%20%2Eparen%20%7B%0Acolor%3A%20rgb%28104%2C%20118%2C%20135%29%0A%7D%0Apre%20%2Eliteral%20%7B%0Acolor%3A%20%23990073%0A%7D%0Apre%20%2Enumber%20%7B%0Acolor%3A%20%23099%3B%0A%7D%0Apre%20%2Ecomment%20%7B%0Acolor%3A%20%23998%3B%0Afont%2Dstyle%3A%20italic%0A%7D%0Apre%20%2Ekeyword%20%7B%0Acolor%3A%20%23900%3B%0Afont%2Dweight%3A%20bold%0A%7D%0Apre%20%2Eidentifier%20%7B%0Acolor%3A%20rgb%280%2C%200%2C%200%29%3B%0A%7D%0Apre%20%2Estring%20%7B%0Acolor%3A%20%23d14%3B%0A%7D%0A" rel="stylesheet" type="text/css" />
         <style type="text/css">
           pre:not([class]) {
             background-color: white;
@@ -130,7 +128,6 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="http://www.zillow.com/"><img style="max-width:100%; max-height:100%;" src="img/logo.png"></a>
-                <a class="navbar-brand page-scroll" href="#page-top"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -168,13 +165,13 @@
                     <div id="woot">
                         <span style="font-size:150%;line-height:1.3;" >
                           <strong>This house(ing market)<br>is on fire!</strong><br></span>
-                          <span style="font-size:70%;line-height:1;" >Using American Community Survey and Zillow data<br>to explore housing affordability<br>for protective service workers<br></span>
+                          <span style="font-size:70%;line-height:1;" >Using American Community Survey and Zillow data<br>to explore housing affordability for protective service workers<br></span>
 
                           <a id = "btn" href="https://github.com/CommerceDataService/tutorial_zillow_acs/zipball/master"> <strong>ZIP File</strong></a>
                           <a id = "btn" href="https://github.com/CommerceDataService/tutorial_zillow_acs/tarball/master"> <strong>TAR Ball</strong></a>
                           <a id = "btn" href="https://github.com/CommerceDataService/tutorial_zillow_acs"><strong>GitHub</strong></a>
 
-                          <p><br>Use R, ggplot2, choroplethr,<br>and choroplethrMaps <br> to visualize ACS and Zillow data</p>
+                          <p><br>Use R, ggplot2, and choroplethr to visualize ACS and Zillow data</p>
                       </div>
                 </h2>
             </div>
@@ -192,11 +189,9 @@
             <div class="col-lg-2"style="font-family:Helvetica;text-align:left;background-color:white; border-style: solid;
                 border-color:lightgrey;border-radius:5px;border-width: 2px;">
                 <p><span style="font-size:120%;color:#0074E4;">Credits</span>
-                    <small><br><strong>Written by Zillow Experts</strong>
+                    <small><br><strong>Written by Zillow Expert</strong>
                     <ul>
-                        <li>Aaron Terrazas</li>
-                        <li>Svenja Gudell</li>
-                        <li>Krishna Rao</li>
+                        <li>Aaron Terrazas, Senior Economist</li>
                     </ul>
                     <strong>Edited by the Commerce Data Service</strong><br>
                     <ul>
@@ -216,7 +211,7 @@
 
 <div class="container-fluid main-container">
     <p style="font-family:Helvetica;"><span style="font-size:150%;color:#0074E4;"><strong>What data is used?</strong><br></span>
-    By combining <a href="www.zillow.com/research/data">Zillow data</a> on home values, rents, and historical housing costs burdens with data on incomes by occuption from the United States Census Bureau's <a href="https://www.census.gov/programs-surveys/acs/">American Community Survey</a>, we can compare housing affordability for specific types of workers in different communities across the country. In this example, we estimate the share of a household's income that goes to  a monthly mortgage payment on the median home across the country's metro areas for two types of workers:    
+    By combining <a href="www.zillow.com/research/data">Zillow data</a> on home values, rents, and historical housing-cost burdens with data on incomes by occuption from the United States Census Bureau's <a href="https://www.census.gov/programs-surveys/acs/">American Community Survey</a>, we can compare housing affordability for specific types of workers in different communities across the country. In this example, we estimate the share of a household's income that goes to  a monthly mortgage payment on the median home across the country's metro areas for two types of workers:    
     <ul>
         <li>Fire fighting and prevention, and other protective service workers, including supervisors (who we broadly label <strong>firefighters</strong>),</li>
         <li>Law enforcement workers, including supervisors (who we broadly label <strong>police officers</strong>).</li>
@@ -591,10 +586,10 @@ continental &lt;- county.regions$region[!county.regions$state.name %in% c(&quot;
 <div id="appendix" class="container-fluid main-container" style="background-color:white;">
     <p style="font-family:Helvetica;">
         <span style="font-size:150%;color:#0074E4;"><strong>Conclusion</strong></span><br>
-        Some (perhaps) surprising findings are visible in the results. For example, Chicago does very well when it comes to mortgage affordability for police officers, but not great when it comes to mortgage affordability for firefighters. Affordability for both occupational groups is equally bad in Bismark, North Dakota as it is in coastal California.</p>
+        Some (perhaps) surprising findings are visible in the results. For example, Chicago does very well when it comes to mortgage affordability for police officers, but not great when it comes to mortgage affordability for firefighters. Affordability for both occupational groups is equally bad in Bismark, North Dakota, as it is in coastal California.</p>
     <p>There is obviously a lot more one could explore in these data. However, the code described above should allow you to do it yourself!</p>
 </div>
-
+<br><br><br>
 
 <div class="container-fluid main-container" style="background-color:white;">
     <p style="font-family:Helvetica;">
@@ -664,6 +659,5 @@ rm(i)</code></pre>
     <pre class="r"><code>## Merge geos and acs data, sub-state geographies
 incomes &lt;- merge(geos, acs[, c('STUSAB', 'LOGRECNO', acsVars)], by = c('STUSAB', 'LOGRECNO'))</code></pre>
 </div>
-
 </body>
 </html>
