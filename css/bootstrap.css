@@ -4160,26 +4160,63 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px;
+  border-width: 0 0 0px;
 }
 .navbar-fixed-bottom {
   bottom: 0;
   margin-bottom: 0;
-  border-width: 1px 0 0;
+  border-width: 0px 0 0;
 }
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 0px 0px;
+  /*padding: 0px 0px;*/
   font-size: 18px;
   line-height: 20px;
+  opacity: 1;
+  background-color: white;
+  /*ARROW*/
+  padding: 0px 0 0px 0px;
+  position: relative; 
+  display: block;
+  float: left;
+}
+.navbar-brand:after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+}
+.navbar-brand:before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;       
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 0px;
+  left: 100%;
+  z-index: 1; 
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
+  opacity: 1;
 }
 .navbar-brand > img {
   display: block;
+  opacity: 1;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -4391,6 +4428,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default {
   background-color: #0074E4;
   border-color: #e7e7e7;
+  overflow: hidden;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -4398,7 +4436,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #5e5e5e;
-  background-color: transparent;
+  /*background-color: transparent;*/
+  background-color: white;
 }
 .navbar-default .navbar-text {
   color: #777;
